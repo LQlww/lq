@@ -10,19 +10,6 @@ import android.widget.TextView;
 
 public class HorizontalActivity extends Activity {
 
-
-
-    /*@Override
-    public void onConfigurationChanged(Configuration newConfig) {
-        super.onConfigurationChanged(newConfig);
-        TextView textView = (TextView)findViewById(R.id.DisplayHorizontal);
-        if (newConfig.orientation == Configuration.ORIENTATION_PORTRAIT) {
-            Intent intent = new Intent(HorizontalActivity.this, MainActivity.class);
-           // intent.putExtra();传参数防止数据丢失
-            startActivity(intent);
-            finish();
-        }
-    }*/
     @Override
     protected void onCreate(Bundle savedInstanceState) {
 
@@ -291,7 +278,7 @@ public class HorizontalActivity extends Activity {
             @Override
             public void onClick(View v) {
                 if(textView.length()!=0){
-                    textView.setText(textView.getText()+"#");
+                    textView.setText(textView.getText()+"^");
                 }
             }
         });

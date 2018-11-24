@@ -18,12 +18,13 @@
         />
 
     <Button
+        android:id="@+id/transferCalculate"
         android:layout_width="wrap_content"
-        android:layout_height="match_parent"
+        android:layout_height="57dp"
         android:layout_above="@id/ScienceLayout"
         android:layout_below="@id/DisplayHorizontal"
-        android:id="@+id/transferCalculate"
-        android:text="Calculate"/>
+        android:layout_marginTop="192dp"
+        android:text="Calculate" />
 
     <TextView
         android:layout_width="match_parent"

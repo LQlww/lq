@@ -24,7 +24,7 @@ public class Calculate {
     public static int symbolPriority(char symbol,int flag){
         int priority = 0;
         if(symbol=='+'||symbol=='-')
-            priority = 1+flag*3;
+        priority = 1+flag*3;
         if (symbol=='*'||symbol=='/')
             priority = 2+flag*3;
         if (symbol=='(')
@@ -46,7 +46,7 @@ public class Calculate {
         int tempDivision = 0;
         for (int j=0;j<statement.length();j++){
             char ch = statement.charAt(j);
-            if(ch=='#'){
+            if(ch=='^'){
                 tempDivision = j;
                 String a = statement.substring(0,j);
                 String b = statement.substring(j+1,statement.length());
@@ -69,7 +69,7 @@ public class Calculate {
         //char数组中每位只能存一个单位数，不能存多位数
 
         //把字符串分解拆成两个栈并进行运算
-        //完成：（）的运算
+        //完成（）的运算
         for(int i=0;i<statement.length();i++){
             char ch = statement.charAt(i);
             if(ch=='+'||ch=='-'||ch=='*'||ch=='/'){
